@@ -11,19 +11,14 @@ Este repositório contém a documentação e os scripts de banco de dados para o
 📁 ROOT (Raiz do Servidor Apache)
 │
 ├── 📁 private/ (Seguro - Nível acima da public_html, ninguém acessa por URL)
-│   └── 📁 financas/
-│      └── config.php (Senhas do banco, conexões PDO do App Finanças)
+│   └── config.php (Senhas do banco, conexões PDO do App Finanças)
 │
 └── 📁 public_html/ (Público - Raiz dos domínios, acessível pela Internet)
-    │
-    ├── 📁 financas/
-    │   ├── 📁 assets/
-    │   ├── index.html
-    │   └── 📁 backend/ 
-    │       ├── api.php      <-- (Gateway: Recebe requisições do App Finanças)
-    │       └── 📁 modules/  <-- (Lógica de negócio: onde está o seu core.php)
-    │
-    └── index.php       <-- (Landing page principal ou php de direcionamento)
+    ├── 📁 assets/
+    ├── 📁 backend/ 
+    │   ├── api.php      <-- (Gateway: Recebe requisições do App Finanças)
+    │   └── 📁 modules/  <-- (Lógica de negócio: onde está o seu core.php)
+    └── index.php       <-- (App Finanças)
 ```
 
 ## ARQUIVOS DA PASTA ``PRIVATE``
